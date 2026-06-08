@@ -205,7 +205,7 @@ export default function Home() {
 
                 <button
                   onClick={() => {
-                    if (!designId) {
+                    if (!designId || !savedFile) {
                       alert("Aucun design trouvé.");
                       return;
                     }
