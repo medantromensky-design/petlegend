@@ -26,7 +26,7 @@ if (TEST_MODE) {
 
   return Response.json({
     clientImage: "/test-result.jpg",
-    savedFile: "/test-result.jpg",
+    savedFile: "/TEST-DEPUIS-VERCEL.jpg",
     designId: designId,
   });
 }
