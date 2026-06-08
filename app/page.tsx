@@ -210,7 +210,7 @@ export default function Home() {
                       return;
                     }
                     
-                    const imageUrl = `http://localhost:3000${savedFile}`;
+                    const imageUrl = `https://petlegend-oye32jlzy-test-1-s-projects1.vercel.app${savedFile}`;
 
                     window.location.href = `https://qven8i-s1.myshopify.com/products/t-shirt-animal-personnalise?designId=${designId}&imageUrl=${encodeURIComponent(imageUrl)}`;
                   }}  
