@@ -19,14 +19,14 @@ async function loadReferenceImage(relativePath: string) {
 
 export async function POST(request: Request) {
   try {
-    const TEST_MODE = true;
+    const TEST_MODE = false;
 
 if (TEST_MODE) {
   const designId = `test-design-${Date.now()}`;
 
   return Response.json({
     clientImage: "/test-result.jpg",
-    savedFile: "/TEST-DEPUIS-VERCEL.jpg",
+    savedFile: "/test-result.jpg",
     designId: designId,
   });
 }
