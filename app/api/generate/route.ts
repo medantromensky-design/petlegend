@@ -134,21 +134,9 @@ if (!imageBase64) {
 const designId = `design-${Date.now()}`;
 const fileName = `${designId}.png`;
 
-const outputPath = path.join(
-  process.cwd(),
-  "public",
-  "generated",
-  fileName
-);
-
-fs.writeFileSync(
-  outputPath,
-  Buffer.from(imageBase64, "base64")
-);
-
 return Response.json({
   clientImage: `data:image/png;base64,${imageBase64}`,
-  savedFile: `/generated/${fileName}`,
+  savedFile: `data:image/png;base64,${imageBase64}`,
   designId: designId,
 });
   } catch (error) {
