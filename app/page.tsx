@@ -205,14 +205,13 @@ export default function Home() {
 
                 <button
                   onClick={() => {
-                    if (!designId || !savedFile) {
+                    if (!designId) {
                       alert("Aucun design trouvé.");
                       return;
                     }
-                    
-                    const imageUrl = `${window.location.origin}${savedFile}`;
 
-                    window.location.href = `https://qven8i-s1.myshopify.com/products/t-shirt-animal-personnalise?designId=${designId}&imageUrl=${encodeURIComponent(imageUrl)}`;
+                    window.location.href =
+                      `https://qven8i-s1.myshopify.com/products/t-shirt-animal-personnalise?designId=${designId}`;
                   }}  
                   className="mt-5 w-full rounded-2xl bg-emerald-400 px-6 py-4 text-lg font-black text-black hover:bg-emerald-300"
                 >
